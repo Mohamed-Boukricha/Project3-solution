@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box; 
+}
+.row {
+	width: 100%;
+}
+
+
+p, h1, h2 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+	position: relative;
+	margin: 20px;
+}
+
+section > h2 {
+	position: absolute;
+	margin-top: 0px;
+	top: -2px;
+	right: -2px;
+	width: 160px;
+	text-align: center;
+}
+
+
+section > p {
+	padding-top: 15px;
+  	padding-right: 15px;
+  	padding-bottom: 0px;
+	padding-left: 15px;
+	color: black ;
+}
+
+div > h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 130%;
+}
+
+section, section > h2 {
+	border: 2px solid black;
+}
+
+
+#section-1 {
+	background-color: #929292;
+}
+
+#section-2 {
+	background-color: #929292;
+	color: white;
+}
+
+#section-3 {
+	background-color: #929292;
+	
+}
+
+#section-1 > h2 {
+	background-color: #EB9595;
+}
+
+#section-2 > h2 {
+	background-color: #D44848;
+}
+
+#section-3 > h2 {
+	background-color: #E9DAA7;
+}
+
+/* ---------  <for small size screens like a mobile phone ---------------- */
+@media (max-width: 767px) {
+	.col-sm-12 {
+		float: left;
+		width: 100%;
+	}
+}
+
+
+
+/* For medium-sized windows*/
+
+@media (min-width: 768px) and (max-width: 991px){
+
+	.col-md-6 {
+		width: 50.00%;
+		float: left;
+	}
+	.col-md-12 {
+		width: 100%;
+		float: left;
+	}
+}
+
+/* for large-sized screens*/
+@media (min-width: 992px) {
+	.col-lg-4 {
+		width: 33.33%;
+		float: left;
+	}
+
+}
